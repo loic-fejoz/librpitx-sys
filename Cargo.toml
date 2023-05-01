@@ -1,0 +1,19 @@
+[package]
+name = "librpitx-sys"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+repository = "https://github.com/loic-fejoz/librpitx-sys/"
+description = "Rust bindings to [librpitx](https://github.com/F5OEO/librpitx)."
+categories = ["external-ffi-bindings", "hardware-support"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "info"
+path = "src/info.rs"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.53.1"
